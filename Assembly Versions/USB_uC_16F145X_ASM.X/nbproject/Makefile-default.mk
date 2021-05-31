@@ -90,7 +90,7 @@ ifneq ($(INFORMATION_MESSAGE), )
 endif
 	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/USB_uC_16F145X_ASM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
-MP_PROCESSOR_OPTION=16f1454
+MP_PROCESSOR_OPTION=16f1459
 MP_LINKER_DEBUG_OPTION= 
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: assemble
@@ -99,7 +99,7 @@ ${OBJECTDIR}/main.o: main.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/main.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_PK3=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/main.lst\" -e\"${OBJECTDIR}/main.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/main.o\" \"main.asm\" 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/main.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG  -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/main.lst\" -e\"${OBJECTDIR}/main.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/main.o\" \"main.asm\" 
 	@${DEP_GEN} -d "${OBJECTDIR}/main.o"
 	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
@@ -107,7 +107,7 @@ ${OBJECTDIR}/usb.o: usb.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/usb.o.d 
 	@${RM} ${OBJECTDIR}/usb.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/usb.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_PK3=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/usb.lst\" -e\"${OBJECTDIR}/usb.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/usb.o\" \"usb.asm\" 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/usb.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG  -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/usb.lst\" -e\"${OBJECTDIR}/usb.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/usb.o\" \"usb.asm\" 
 	@${DEP_GEN} -d "${OBJECTDIR}/usb.o"
 	@${FIXDEPS} "${OBJECTDIR}/usb.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
@@ -115,7 +115,7 @@ ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.asm  nbproject/Makefile-${CND_CO
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/usb_descriptors.o.d 
 	@${RM} ${OBJECTDIR}/usb_descriptors.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/usb_descriptors.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_PK3=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/usb_descriptors.lst\" -e\"${OBJECTDIR}/usb_descriptors.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/usb_descriptors.o\" \"usb_descriptors.asm\" 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/usb_descriptors.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG  -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/usb_descriptors.lst\" -e\"${OBJECTDIR}/usb_descriptors.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/usb_descriptors.o\" \"usb_descriptors.asm\" 
 	@${DEP_GEN} -d "${OBJECTDIR}/usb_descriptors.o"
 	@${FIXDEPS} "${OBJECTDIR}/usb_descriptors.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
@@ -123,7 +123,7 @@ ${OBJECTDIR}/usb_msd.o: usb_msd.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/usb_msd.o.d 
 	@${RM} ${OBJECTDIR}/usb_msd.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/usb_msd.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_PK3=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/usb_msd.lst\" -e\"${OBJECTDIR}/usb_msd.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/usb_msd.o\" \"usb_msd.asm\" 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/usb_msd.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG  -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/usb_msd.lst\" -e\"${OBJECTDIR}/usb_msd.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/usb_msd.o\" \"usb_msd.asm\" 
 	@${DEP_GEN} -d "${OBJECTDIR}/usb_msd.o"
 	@${FIXDEPS} "${OBJECTDIR}/usb_msd.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
@@ -131,7 +131,7 @@ ${OBJECTDIR}/bootloader.o: bootloader.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/bootloader.o.d 
 	@${RM} ${OBJECTDIR}/bootloader.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/bootloader.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_PK3=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/bootloader.lst\" -e\"${OBJECTDIR}/bootloader.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/bootloader.o\" \"bootloader.asm\" 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/bootloader.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG  -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/bootloader.lst\" -e\"${OBJECTDIR}/bootloader.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/bootloader.o\" \"bootloader.asm\" 
 	@${DEP_GEN} -d "${OBJECTDIR}/bootloader.o"
 	@${FIXDEPS} "${OBJECTDIR}/bootloader.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
@@ -183,7 +183,7 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/USB_uC_16F145X_ASM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION)  -w -x -u_DEBUG -z__ICD2RAM=1 -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"   -z__MPLAB_BUILD=1  -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_PK3=1 $(MP_LINKER_DEBUG_OPTION) -odist/${CND_CONF}/${IMAGE_TYPE}/USB_uC_16F145X_ASM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION)  -w -x -u_DEBUG -z__ICD2RAM=1 -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"   -z__MPLAB_BUILD=1  -z__MPLAB_DEBUG=1 $(MP_LINKER_DEBUG_OPTION) -odist/${CND_CONF}/${IMAGE_TYPE}/USB_uC_16F145X_ASM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/USB_uC_16F145X_ASM.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 

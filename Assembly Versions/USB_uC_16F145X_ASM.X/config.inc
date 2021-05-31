@@ -55,9 +55,9 @@ CONFIG_REGION_START equ 0x8000 ;(Don't modify).
 
 ; Processor:
 ; Uncomment the processor used.
-#define PIC16F1454
+;#define PIC16F1454
 ;#define PIC16F1455
-;#define PIC16F1459
+#define PIC16F1459
  
 ; Oscillator Options:
 ; Define XTAL_USED in board options as one of the following.
@@ -70,8 +70,9 @@ CONFIG_REGION_START equ 0x8000 ;(Don't modify).
 #define DM164127 0 ; Compatible with DM164127-2/DV164139-2 https://www.microchip.com/developmenttools/ProductDetails/PartNO/DM164127-2.
 #define GENERAL  1 ; Compatible with dev boards that have a reset button.
 #define XPRESS   2 ; Compatible with the programmer (PIC16F1454) on DM164141 (used it for development).
-#define CUSTOM   3 ; Write your own.
-#define BOARD_VERSION DM164127
+#define UBMP4    3 ; Compatible with the mirobo UBMP4 family of development boards https://mirobo.tech/ubmp4
+#define CUSTOM   4 ; Write your own.
+#define BOARD_VERSION UBMP4
 
     if BOARD_VERSION == DM164127
 #define XTAL_USED         NO_XTAL ; Could also use MHz_12.
@@ -106,6 +107,20 @@ CONFIG_REGION_START equ 0x8000 ;(Don't modify).
 #define LED_BIT           3
 #define LED_LAT           LATC
 #define LED_TRIS          TRISC
+    endif
+
+    if BOARD_VERSION == UBMP4
+#define XTAL_USED           NO_XTAL
+#define BUTTON_PORT_BIT     3
+#define BUTTON_PORT         PORTA
+#define BUTTON_WPU_BIT      3
+#define BUTTON_WPU          WPUA
+#define BUTTON_ACTIVE_LOW   
+#define USE_BOOT_LED        
+#define LED_BIT             5
+#define LED_LAT             LATA
+#define LED_TRIS            TRISA
+#define LED_ACTIVE_LOW      
     endif
 
     if BOARD_VERSION == CUSTOM
